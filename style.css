@@ -1,0 +1,141 @@
+nav {
+  background-color: white;
+  box-shadow: 0 0 2px 2px rgb(61, 60, 60);
+}
+a {
+  color: black;
+}
+.home h1 {
+  font-size: 60px;
+}
+.home h3 {
+  font-size: 45px;
+}
+.about-heading-img {
+  border-radius: 300px;
+}
+.button {
+  border: 3px solid black;
+  border-radius: 30px;
+  text-decoration: none;
+  color: black;
+  padding: 3px 15px;
+}
+.button:hover {
+  background-color: black;
+  color: white;
+}
+.home img {
+  border-radius: 200px;
+  width: 100%;
+}
+#home {
+  padding: 100px 50px;
+}
+@media only screen and (max-width: 770px) {
+  #home img {
+    width: 100%;
+  }
+  #home {
+    margin-top: -30px;
+  }
+}
+/* ABOUT */
+#about {
+  padding: 100px 50px;
+}
+#work {
+  padding: 80px 50px;
+}
+#contact {
+  padding: 80px 50px;
+}
+.arrow {
+  margin-top: 50px;
+  text-decoration: none;
+}
+#arrow-img {
+  animation: 2s arrow infinite;
+}
+@keyframes arrow {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(7px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.exp-detail {
+  display: none;
+}
+/* WORK */
+.work h1 {
+  font-size: 60px;
+}
+.work-img {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: 'work-1 work-2' 'work-3 work-3';
+  gap: 20px;
+}
+.work-img img {
+  width: 100%;
+}
+#work-1 {
+  grid-area: work-1;
+}
+#work-2 {
+  grid-area: work-2;
+}
+#work-3 {
+  grid-area: work-3;
+}
+.work-img-item {
+  position: relative;
+}
+.work-img-item:hover::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 30px;
+  font-weight: 500px;
+}
+#work-1:hover::after {
+  content: 'Web Developer';
+}
+#work-2:hover::after {
+  content: 'Web Developer';
+}
+#work-3:hover::after {
+  content: 'Web Developer';
+}
+/* CONTACT */
+#contact form {
+  border: 2px solid black;
+  padding: 40px 30px;
+  background-color: rgb(175, 173, 169);
+}
+#contact a {
+  text-decoration: none;
+}
+@media only screen and(max-width:500px) {
+  .about-desc {
+    text-align: center;
+  }
+}
