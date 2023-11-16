@@ -80,13 +80,7 @@ a {
 .work h1 {
   font-size: 60px;
 }
-.work-img {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-areas: 'work-1 work-2' 'work-3 work-3';
-  gap: 20px;
-}
-.work-img img {
+.card img {
   width: 100%;
 }
 #work-1 {
@@ -100,6 +94,7 @@ a {
 }
 .work-img-item {
   position: relative;
+  margin-top: 30px;
 }
 .work-img-item:hover::after {
   content: '';
@@ -124,6 +119,13 @@ a {
 }
 #work-3:hover::after {
   content: 'Web Developer';
+}
+#work-1-pp:hover::after {
+  content: 'Juara 1 Geografi Event Islamic Science Olimpyc';
+  text-align: center;
+}
+#project-img {
+  margin-top: 400px;
 }
 /* CONTACT */
 #contact form {
