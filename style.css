@@ -137,6 +137,9 @@ a {
 #project-img {
   margin-top: 400px;
 }
+body {
+  background-color: black;
+}
 /* CONTACT */
 #contact {
   background-color: blue;
