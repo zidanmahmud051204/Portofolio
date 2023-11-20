@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <!-- FONTS GOOGLE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Kdam+Thmor+Pro&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
     <!-- CDN BOOTSTRAP ICON -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
     <!-- CDN BOOTSTRAP -->
@@ -12,25 +16,25 @@
     <title>Zidan Portofolio</title>
   </head>
   <body>
-      <nav class="navbar navbar-expand-md bg-secondary sticky-top">
+      <nav class="navbar navbar-expand-md bg-secondary sticky-top navbar-animation">
         <div class="container">
-          <a class="navbar-brand fs-3 fw-bold text-dark mt-0" href="#">Zidan Mahmud</a>
+          <a class="text-decoration-none fs-3 fw-bold mt-0" href="#home">Zidan Mahmud</a>
           <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon text-light"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto ">
+            <ul class="navbar-nav ms-auto align-items-center">
               <li class="nav-item">
-                <a class="nav-link active text-dark hover" aria-current="page" href="#home">Home</a>
+                <a class="text-decoration-none ms-3" aria-current="page" href="#home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-dark" href="#about">About</a>
+                <a class="text-decoration-none ms-3 active" href="#about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-ldark" href="#gallery">Gallery</a>
+                <a class="text-decoration-none ms-3" href="#gallery">Gallery</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-dark" href="#contact">Contact</a>
+                <a class="text-decoration-none ms-3" href="#contact">Contact</a>
               </li>
             </ul>
           </div>
@@ -40,100 +44,102 @@
     <section id="home" class="home">
       <div class="row d-flex align-items-center flex-md-row flex-column-reverse">
         <div class="col-12 col-md-8">
-          <h3 class="fw-semibold text-light">Hallo, Saya</h3>
-          <h1 class="fw-bold text-light">Zidan Mahmud</h1>
-          <p class="text-light">Saya adalah seorang Junior Programer & Leadership</p>
+          <h3 class="fw-semibold text-light welcome-text"></h3>
+          <h1 class="fw-bold text-light title-text"></h1>
+          <p class="text-light desc-text"></p>
           <a href="doc/CV_ZIDAN_MAHMUD.pdf" target="_blank" download class="button">Resume</a>
         </div>
         <div class="col-12 col-md-4">
-          <img src="img/photo_6244481084146432359_y.jpg" width="350px" alt="" />
+          <img src="img/photo_6244481084146432359_y.jpg" width="350px" alt="" class="img-home" />
         </div>
       </div>
       <div class="arrow w-100 d-flex align-items-center flex-column">
         <a class="text-decoration-none mb-1 fw-semibold text-light" href="#about">More Info </a>
-        <a href="#about" id="arrow-img"> <img src="img/arrow.svg" alt="" /></a>
+        <a href="#about" id="arrow-img"> <img src="img/pngimg.com - red_arrow_PNG68.png" width="80px" alt="" /></a>
       </div>
     </section>
     <!-- ABOUT -->
     <section id="about" class="about">
       <h1 class="title-about fw-bold text-warning mb-4">About</h1>
+      <div class="about-desc-2">
+       <p class="fw-bold mb-0 title-about-2 text-secondary">Junior Programer</p>
+       <p class="mt-1">Saya adalah seorang junior programmer yang bersemangat dan penuh dedikasi untuk menjelajahi dunia coding. Dengan fondasi kuat dalam bahasa pemrograman seperti JavaScript, dan Php, saya terus belajar dan mengembangkan keterampilan saya.
+        Saya percaya bahwa setiap baris kode adalah sebuah cerita yang menarik. Dari memecahkan teka-teki kompleks hingga menciptakan solusi inovatif, saya menemukan kegembiraan dalam menulis kode yang efisien dan bersih.
+        Lingkungan teknologi yang dinamis adalah panggung di mana saya tumbuh. Saya senang bekerja dalam tim yang kolaboratif, berbagi ide, dan menciptakan solusi yang dapat membawa perubahan positif.</p>
+      </div>    
      <div class="about-desc-1">
-      <p class="fw-bold mb-0 text-secondary">Leaderhsip</p>
+      <p class="fw-bold mb-0 mt-4 title-about-2 text-secondary">Leadership</p>
       <p class="mt-1">Saya adalah seseorang yang mempunyai bakat dalam kepemimpinan.
-        Saya mampu memotivasi dan membimbing orang laindengan bijak. Ketelitian saya dalam menganalisismasalah dan pekerjaan saya adalah salah satu yang terbesarkeuntungan. Saya selalu berusaha untuk mencapainyahasil terbaik dengan menjaga kualitas tinggi dan
-        detail dalam semua tugas yang saya lakukan. Jiwa kepemimpinan yang kuat dan ketelitian menjadikan sumber inspirasi saya dan efektivitas dalam pekerjaan yag sedang saya kerjakan.
+        Saya mampu memotivasi dan membimbing orang lain dengan bijak. Ketelitian saya dalam menganalisis masalah dan pekerjaan adalah salah satu keuntungan terbesar. Saya selalu berusaha untuk mencapai hasil yang terbaik dengan menjaga kualitas dan
+        detail dalam semua tugas dan pekerjaan yang saya lakukan. Jiwa kepemimpinan yang kuat dan ketelitian menjadikan sumber inspirasi saya dan efektivitas dalam pekerjaan ataupun tugas yag sedang saya kerjakan.
       </p>
-     <div class="about-desc-2">
-      <p class="fw-bold mb-0 text-secondary">Junior Programer</p>
-      <p class="mt-1">Saya adalah seorang junior programmer yang bersemangat dan tengah giat mengembangkan keterampilan programming saya. Dengan latar belakang yang kuat dalam berbagai kemampuan saya di HTML, CSS, BOOTSTRAP, JAVASCRIPT, JQUREY, PHP, MY SQL, & LARAVEL FRAME WORK.
-      <br> dan sekarang saya sedang mengeksplorasi berbagai konsep dan teknologi baru untuk meningkatkan kemampuan programming saya.</p>
-     </div>    
     </section>
     <!-- GALLERY -->
     <section id="gallery">
-      <h1 class="fw-bold text-warning mb-2 mt-4" >Gallery</h1>
-      <h4 class="text-secondary mb-4">Penghargaan & Prestasi</h4>
+      <h1 class="fw-bold text-warning mb-2 mt-4 title-gallery" >Gallery</h1>
+      <h4 class="text-secondary mb-4 title-gallery-2">Penghargaan & Prestasi</h4>
         <div class="row justify-content-center" id="achivments">
           <div class="col-md-4 offset-1 mb-3">
-            <div class="card-dark" data-aos="zoom-in-left" data-aos-delay="50">
+            <div class="card-dark" data-aos="zoom-in-left" data-aos-delay="50"data-aos-duration="1000">
                 <img src="img/1.jpg" class="card-img-top" alt="">         
                 <div class="card-body">
-                  <h5 class="text-light">Apresiasi Dari Wakil Bupati Subang</h5> 
+                  <h5 class="text-light mt-3">Apresiasi Dari Wakil Bupati Subang</h5> 
                     <p class="text-light">atas prestasinya sebagai perwakilan dari provinsi Jawa Barat untuk mengikuti ajang ISLAMIC SCIENCE OLYMPIC (ISO) bidang studi Geografi & Sejarah</p>
                     <h5 class="text-light">2023</h5>
                   </div>
               </div>
         </div>
           <div class="col-md-4 offset-1 mb-3">
-            <div class="card-dark" data-aos="zoom-in-left" data-aos-delay="50">
+            <div class="card-dark" data-aos="zoom-in-right" data-aos-delay="50"data-aos-duration="1000">
                 <img src="img/2.jpg" class="card-img-top" alt="">         
                 <div class="card-body">
-                  <h5 class="text-light">Apresiasi Dari MAN 2 SUBANG</h5>
+                  <h5 class="text-light mt-3">Apresiasi Dari MAN 2 SUBANG</h5>
                   <p class="text-light">atas kontribusinya dalam mengikuti KOMPETISI SAINS MADRASAH (KSM) bidang studi Geografi</p>
                   <h5 class="text-light pb-4 ">2022</h5>
                 </div>
               </div>
         </div>
           <div class="col-md-4 offset-1 mb-3">
-            <div class="card-dark" data-aos="zoom-in-left" data-aos-delay="50">
+            <div class="card-dark" data-aos="zoom-in-left" data-aos-delay="50"data-aos-duration="1000">
                 <img src="img/3.jpg" class="card-img-top" alt="">         
                 <div class="card-body">
-                  <h5 class="text-light">Apresiasi Dari MAN 2 SUBANG</h5>
+                  <h5 class="text-light mt-3">Apresiasi Dari MAN 2 SUBANG</h5>
                   <p class="text-light">atas prestasinya sebagai Juara Harapan 3 Provinsi Jawa Barat pada ajang ISLAMIC SCIENCE OLYMPIC (ISO) bidang studi Sejarah</p>
                   <h5 class="text-light">2023</h5>
                 </div>
               </div>
         </div>
           <div class="col-md-4 offset-1 mb-3">
-            <div class="card-dark" data-aos="zoom-in-left" data-aos-delay="50">
+            <div class="card-dark" data-aos="zoom-in-right" data-aos-delay="50" data-aos-duration="1000">
                 <img src="img/4.jpg" class="card-img-top" alt="">         
                 <div class="card-body">
-                  <h5 class="text-light">Apresiasi Dari MAN 2 SUBANG</h5>
+                  <h5 class="text-light mt-3">Apresiasi Dari MAN 2 SUBANG</h5>
                   <p class="text-light">atas prestasinya sebagai Juara Harapan 1 Provinsi Jawa Barat pada ajang ISLAMIC SCIENCE OLYMPIC (ISO) bidang studi Geografi</p>
                   <h5 class="text-light">2023</h5>
                 </div>
               </div>
         </div>
           <div class="col-md-4 offset-1 mb-3 justify-content-center">
-            <div class="card-dark" data-aos="zoom-in-left" data-aos-delay="50">
+            <div class="card-dark" data-aos="zoom-in-left" data-aos-delay="50"data-aos-duration="1000">
                 <img src="img/5.jpg" class="card-img-top" alt="">         
                 <div class="card-body">
-                  <h5 class="text-light">Apresiasi Dari MAN 2 SUBANG</h5>
+                  <h5 class="text-light mt-3">Apresiasi Dari MAN 2 SUBANG</h5>
                   <p class="text-light">Atas prestasinya sebagai lulusan terbaik / wisudawan terbaik tahun ajaran 2020/2023</p>
                   <h5 class="text-light">2023</h5>
                 </div>
         </div>
         </div>
       </div>
-      <h4 class="fw-bold text-secondary mt-5">Project</h4>
+<!-- PROJJECT -->
+      <h4 class="fw-bold text-secondary title-gallery-2 mt-5">Project</h4>
       <div class="row justify-content-center">
         <div class="col-md-4 offset-1 mb-3">
-          <div class="card work-img-item" id="work-1"data-aos="zoom-in-left" data-aos-delay="50">
+          <div class="card work-img-item" id="work-1"data-aos="zoom-in-left" data-aos-delay="50"data-aos-duration="1500">
               <img src="img/SharedScreenshot.jpg" class="card-img-top" alt="">         
             </div>
       </div>
         <div class="col-md-4 offset-1 mb-3">
-          <div class="card work-img-item" id="work-2"data-aos="zoom-in-left" data-aos-delay="50">
+          <div class="card work-img-item" id="work-2"data-aos="zoom-in-left" data-aos-delay="50" data-aos-duration="1500">
               <img src="img/SharedScreenshvot.jpg" class="card-img-top" alt="">         
             </div>
       </div>
@@ -143,17 +149,31 @@
             </div>
       </div>
       </div>
+<!-- CERTIFICATE -->
+      <h4 class="fw-bold text-secondary title-gallery-2 mt-5">Certificate</h4>
+      <div class="row justify-content-center">
+        <div class="col-md-4 offset-1 mb-3">
+          <div class="card work-img-item" id="work-4">
+              <img src="img/sertifikatcs.jpg" class="card-img-top" alt="">         
+            </div>
+      </div>
+        <div class="col-md-4 offset-1 mb-3">
+          <div class="card work-img-item" id="work-5">
+              <img src="img/sertifikatEdu.jpg" class="card-img-top" alt="">         
+            </div>
+      </div>
+      </div>
     <!-- CONTACT -->
     </section>
     <section id="contact" class="contact">
-      <h1 class="title-Contact fw-bold text-warning">Contact</h1>
+      <h1 class="title-contact fw-bold text-warning">Contact</h1>
       <div class="row d-flex align-items-center flex-md-row flex-column-reverse">
         <div class="col-12 col-md-5">
         <div class="row mt-3">
           <div class="col"> 
             <a href="https://www.facebook.com/zidan.mahmud.1232" target="_blank" class="d-flex align-items-center text-dark">
-              <img src="img/facebook-icon-free-png.webp" class="ms-3" width="30px" alt="">
-              <p class="fw-semibold mb-0 ms-3">Zidan Mahmud</p>
+              <img src="img/facebook-icon-free-png.webp" class="ms-3 mt-3" width="30px" alt="">
+              <p class="fw-semibold mb-0 ms-3 mt-3">Zidan Mahmud</p>
             </a>
           </div>
           <div class="col mb-3">
@@ -168,19 +188,19 @@
             <form action="" onsubmit="valdiationForm(event)">
             <div class="mb-3">
               <label for="inp-nama" class="form-label fw-bold">Nama</label>
-              <input type="text" class="form-control" id="inp-nama" placeholder="Enter Your Name">
+              <input type="text" class="form-control" id="inp-nama" placeholder="Enter Your Name" required>
             </div>
             <div class="mb-3">
               <label for="inp-nama" class="form-label fw-bold">Email Address</label>
-              <input type="email" class="form-control" id="inp-email" placeholder="Enter Your Email Address">
+              <input type="email" class="form-control" id="inp-email" placeholder="Enter Your Email Address" required>
             </div>
             <div class="mb-3">
               <label for="inp-nama" class="form-label fw-bold">Phone Number</label>
-              <input type="number" class="form-control" id="inp-phone-number" placeholder="Enter Your Email Address">
+              <input type="number" class="form-control" id="inp-phone-number" placeholder="Enter Your Email Address" required>
             </div>
             <div class="mb-3">
               <label for="exampleFormControlTextarea1" class="form-label fw-bold">Message</label>
-              <textarea class="form-control" id="inp-message" rows="2" placeholder="Enter Your Message"></textarea>
+              <textarea class="form-control" id="inp-message" rows="2" placeholder="Enter Your Message" required></textarea>
             </div>
             <div class="mb-3 d-flex justify-content-center">
               <button type="Submit" class="button-send ps-5 pe-5 text-dark">Send</button>
@@ -195,5 +215,18 @@
     <!-- CDN BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+       <!-- ANIMATION JS GSAP -->
+    <SCRipt src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></SCRipt>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
+    <script>
+      gsap.registerPlugin(TextPlugin)
+      gsap.to('.welcome-text',{duration:3, delay:2, opacity:2, text:'Hallo Saya'})
+      gsap.to('.title-text', { duration:5, delay:5, opacity:2, text:'Zidan Mahmud'});
+      gsap.to('.desc-text', { duration:5, delay:9, opacity:2, text:'Saya Adalah Seorang Junior Programer & Leadership'});
+      gsap.from('nav',{duration:1.5, y:-50, delay:0, opacity:0, ease:'back'})
+      gsap.from('.nav-link',{duration:1.5, delay:1, y:-20, opacity:0, ease:'bounce'})
+      gsap.from('.navbar-brand',{duration:1.5, delay:1, y:-20, opacity:0, ease:'bounce'})
+      gsap.from('.img-home',{ duration:1.5, delay:1.1, y:-100, opacity:0, ease:'bounce' });
+    </script>
   </body>
 </html>

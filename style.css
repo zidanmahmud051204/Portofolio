@@ -2,17 +2,30 @@ nav {
   background-color: rgb(29, 23, 23);
   box-shadow: 0 0 2px 2px rgb(14, 12, 12);
 }
+nav a {
+  font-family: 'Agbalumo', cursive;
+}
 a {
   color: black;
 }
-.hover:hover {
+.nav-link:hover {
   color: yellow;
+}
+nav a{
+  color: black;
+}
+nav a:hover{
+  color: yellow;
+  text-decoration: underline;
 }
 .home h1 {
   font-size: 60px;
+  font-family: 'Agbalumo';
 }
 .home h3 {
+  padding-top: 15px;
   font-size: 45px;
+  font-family: 'Kdam Thmor Pro';
 }
 .about-heading-img {
   border-radius: 300px;
@@ -33,8 +46,8 @@ a {
   width: 100%;
 }
 #home {
-  padding: 90px 50px;
-  background-image: url(img/black-abstract-background-web-sites-260nw-1500865019.webp);
+  padding: 70px 50px 100px 50px;
+  background-image: url(img/black-abstract-background-web-sites-260nw-1500865019.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -52,6 +65,7 @@ a {
 }
 #arrow-img {
   animation: 2s arrow infinite;
+  width: 50px;
 }
 @media only screen and (max-width: 400px) {
   .arrow {
@@ -75,13 +89,29 @@ a {
   background-color: black;
   color: wheat;
 }
+.title-about {
+  font-family: 'Agbalumo', cursive;
+}
+.title-about-2 {
+  font-family: 'Playfair Display';
+}
 #contact {
   padding: 80px 50px;
 }
 /* GALLERY */
+.title-gallery {
+  font-family: 'Agbalumo';
+}
 .card-dark {
   border: 1px solid white;
   padding: 15px 15px;
+}
+.title-gallery-2 {
+  font-family: 'Playfair Display';
+}
+.card-body h5 {
+  font-family: 'Agbalumo';
+  text-align: center;
 }
 #gallery {
   padding: 60px 50px 60px 30px;
@@ -103,6 +133,9 @@ a {
 #work-3 {
   grid-area: work-3;
 }
+#work-4 {
+  grid-area: work-4;
+}
 .work-img-item {
   position: relative;
 }
@@ -118,7 +151,7 @@ a {
   align-items: center;
   justify-content: center;
   color: white;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 500px;
 }
 #work-1:hover::after {
@@ -130,8 +163,12 @@ a {
 #work-3:hover::after {
   content: 'Simple Aplication Library';
 }
-#work-1-pp:hover::after {
-  content: 'Juara 1 Geografi Event Islamic Science Olimpyc';
+#work-4:hover::after {
+  content: 'FUNDAMENTAL FRONT-END WEB DEVELOPMENT I';
+  text-align: center;
+}
+#work-5:hover::after {
+  content: 'LARAVEL X VUE JS (FULLSTACK)';
   text-align: center;
 }
 #project-img {
@@ -143,6 +180,9 @@ body {
 /* CONTACT */
 #contact {
   background-color: blue;
+}
+.title-contact {
+  font-family: 'Agbalumo';
 }
 #contact form {
   border: 2px solid black;

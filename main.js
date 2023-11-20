@@ -5,9 +5,9 @@ function valdiationForm(e) {
   const phone = $('#inp-phone-number');
   const message = $('#inp-message');
   if (!$(email).val()) {
-    alert('Email Wajib Diisi');
-  } else if (!$(nama).val()) {
     alert('Nama Wajib Di isi');
+  } else if (!$(nama).val()) {
+    alert('Email Wajib Diisi');
   } else if (!$(phone).val()) {
     alert('Nomor Hp Wajib Di isi');
   } else if (!$(message).val()) {
