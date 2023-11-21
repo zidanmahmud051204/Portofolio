@@ -18,6 +18,7 @@ nav a:hover{
   color: yellow;
   text-decoration: underline;
 }
+/* HOME */
 .home h1 {
   font-size: 60px;
   font-family: 'Agbalumo';
@@ -34,16 +35,17 @@ nav a:hover{
   border: 3px solid wheat;
   border-radius: 30px;
   text-decoration: none;
-  color: whitesmoke;
+  color: white;
   padding: 3px 15px;
 }
 .button:hover {
   background-color: black;
   color: white;
 }
-.home img {
+.img-home {
   border-radius: 200px;
   width: 100%;
+  border: 5px solid whitesmoke;
 }
 #home {
   padding: 70px 50px 100px 50px;
@@ -156,12 +158,15 @@ nav a:hover{
 }
 #work-1:hover::after {
   content: 'Website Company Profile';
+   text-align: center;
 }
 #work-2:hover::after {
   content: 'Website Portfolio';
+   text-align: center;
 }
 #work-3:hover::after {
   content: 'Simple Aplication Library';
+   text-align: center;
 }
 #work-4:hover::after {
   content: 'FUNDAMENTAL FRONT-END WEB DEVELOPMENT I';
@@ -195,7 +200,7 @@ body {
 .img-icon-ig {
   margin-left: 3px;
 }
-.button-send:hover {
+.btn-send:hover {
   background-color: green;
   color: white;
 }

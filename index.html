@@ -50,12 +50,12 @@
           <a href="doc/CV_ZIDAN_MAHMUD.pdf" target="_blank" download class="button">Resume</a>
         </div>
         <div class="col-12 col-md-4">
-          <img src="img/photo_6244481084146432359_y.jpg" width="350px" alt="" class="img-home" />
+          <img src="img/zidanphotobgputih.jpg" width="350px" alt="" class="rounded-circle img-home " />
         </div>
       </div>
       <div class="arrow w-100 d-flex align-items-center flex-column">
         <a class="text-decoration-none mb-1 fw-semibold text-light" href="#about">More Info </a>
-        <a href="#about" id="arrow-img"> <img src="img/pngimg.com - red_arrow_PNG68.png" width="80px" alt="" /></a>
+        <a href="#about" id="arrow-img"> <img src="img/pngimg.com - red_arrow_PNG68.png" width="50px" alt="" /></a>
       </div>
     </section>
     <!-- ABOUT -->
@@ -185,25 +185,34 @@
         </div>
         </div>
         <div class="col-12 col-md-6">
-            <form action="" onsubmit="valdiationForm(event)">
+          <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
+            <strong>Terima kasiih!! Pesan Anda Sudah Terkirim</strong> <br>
+            <p>Kami Akan Membalas Pesan Anda Secepatnya Melalui WhatsApp</p>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+            <form action="" name="submit-to-google-sheet" >
             <div class="mb-3">
               <label for="inp-nama" class="form-label fw-bold">Nama</label>
-              <input type="text" class="form-control" id="inp-nama" placeholder="Enter Your Name" required>
+              <input type="text" name="nama" class="form-control" id="inp-nama" placeholder="Masukan Nama Anda" required>
             </div>
             <div class="mb-3">
-              <label for="inp-nama" class="form-label fw-bold">Email Address</label>
-              <input type="email" class="form-control" id="inp-email" placeholder="Enter Your Email Address" required>
+              <label for="inp-nama" class="form-label fw-bold">Email</label>
+              <input type="email" name="email" class="form-control" id="inp-email" placeholder="Masukan Email Anda" required>
             </div>
             <div class="mb-3">
-              <label for="inp-nama" class="form-label fw-bold">Phone Number</label>
-              <input type="number" class="form-control" id="inp-phone-number" placeholder="Enter Your Email Address" required>
+              <label for="inp-nama" class="form-label fw-bold">Nomer WhatsApp</label>
+              <input type="number" name="phone_number" class="form-control" id="inp-phone-number" placeholder="Masukan No WhatsApp Anda" required>
             </div>
             <div class="mb-3">
               <label for="exampleFormControlTextarea1" class="form-label fw-bold">Message</label>
-              <textarea class="form-control" id="inp-message" rows="2" placeholder="Enter Your Message" required></textarea>
+              <textarea class="form-control" name="message" id="inp-message" rows="2" placeholder="Masukan Pesan Yang Ingin Disampaikan" required></textarea>
             </div>
             <div class="mb-3 d-flex justify-content-center">
-              <button type="Submit" class="button-send ps-5 pe-5 text-dark">Send</button>
+              <button type="Submit" class="btn-send ps-5 pe-5 text-dark btn btn-primary">Send</button>
+              <button class="btn btn-primary mt-2 btn-loading d-none btn btn-success" type="button" disabled>
+                <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+                <span role="status">Loading...</span>
+              </button>
             </div>
           </div>
          </form>
@@ -227,6 +236,29 @@
       gsap.from('.nav-link',{duration:1.5, delay:1, y:-20, opacity:0, ease:'bounce'})
       gsap.from('.navbar-brand',{duration:1.5, delay:1, y:-20, opacity:0, ease:'bounce'})
       gsap.from('.img-home',{ duration:1.5, delay:1.1, y:-100, opacity:0, ease:'bounce' });
+    </script>
+    <!-- CONTACT -->
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbw8YU-I7XUHGoF6vhEFEVai5Yqmdvit_jztHDb-GXekqtZA4GyfNHw9LoGDb25efsQZ/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const btnKirim   = document.querySelector('.btn-send');
+      const btnloading = document.querySelector('.btn-loading');
+      const myalert    = document.querySelector('.my-alert');
+
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        btnloading.classList.toggle('d-none');
+        btnKirim.classList.toggle('d-none');
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            btnloading.classList.toggle('d-none');
+            btnKirim.classList.toggle('d-none');
+            myalert.classList.toggle('d-none');
+            form.reset();
+            console.log('Success!', response)
+          })
+          .catch(error => console.error('Error!', error.message))
+      })
     </script>
   </body>
 </html>
