@@ -115,6 +115,9 @@ nav a:hover{
   font-family: 'Agbalumo';
   text-align: center;
 }
+.card-body p{
+  text-align: center;
+}
 #gallery {
   padding: 60px 50px 60px 30px;
   background-color: black;
