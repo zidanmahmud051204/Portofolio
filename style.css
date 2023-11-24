@@ -96,6 +96,7 @@ nav a:hover{
 }
 .title-about-2 {
   font-family: 'Playfair Display';
+  color:rgb(87, 0, 168); ;
 }
 #contact {
   padding: 80px 50px;
@@ -109,6 +110,7 @@ nav a:hover{
   padding: 15px 15px;
 }
 .title-gallery-2 {
+  color: rgb(87, 0, 168);
   font-family: 'Playfair Display';
 }
 .card-body h5 {
