@@ -181,6 +181,10 @@ nav a:hover{
   content: 'LARAVEL X VUE JS (FULLSTACK)';
   text-align: center;
 }
+#work-6:hover::after{
+  content: 'ENGLISH SPEAKING COURSE';
+  text-align: center;
+}
 #project-img {
   margin-top: 400px;
 }
