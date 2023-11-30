@@ -20,5 +20,3 @@ function valdiationForm(e) {
     alert('Berhasil Dikirim');
   }
 }
-let promptValue = prompt('Siapa Nama Kamu?');
-alert(`Selamat Datang ${promptValue} Di Website Portofolio Saya`);
