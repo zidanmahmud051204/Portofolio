@@ -11,21 +11,21 @@ a {
 .nav-link:hover {
   color: yellow;
 }
-nav a{
+nav a {
   color: black;
 }
-nav a:hover{
+nav a:hover {
   color: yellow;
   text-decoration: underline;
 }
 /* HOME */
-.home h1 {
+.home h2 {
   font-size: 60px;
   font-family: 'Agbalumo';
 }
-.home h3 {
+.home h4 {
   padding-top: 15px;
-  font-size: 45px;
+  font-size: 40px;
   font-family: 'Kdam Thmor Pro';
 }
 .about-heading-img {
@@ -59,6 +59,10 @@ nav a:hover{
   }
   #home {
     margin-top: -30px;
+  }
+  .home h2 {
+    font-size: 40px;
+    font-family: 'Agbalumo';
   }
 }
 .arrow {
@@ -96,7 +100,7 @@ nav a:hover{
 }
 .title-about-2 {
   font-family: 'Playfair Display';
-  color:rgb(87, 0, 168); ;
+  color: rgb(87, 0, 168);
 }
 #contact {
   padding: 80px 50px;
@@ -117,7 +121,7 @@ nav a:hover{
   font-family: 'Agbalumo';
   text-align: center;
 }
-.card-body p{
+.card-body p {
   text-align: center;
 }
 #gallery {
@@ -163,15 +167,15 @@ nav a:hover{
 }
 #work-1:hover::after {
   content: 'Website Company Profile';
-   text-align: center;
+  text-align: center;
 }
 #work-2:hover::after {
   content: 'Website Portfolio';
-   text-align: center;
+  text-align: center;
 }
 #work-3:hover::after {
   content: 'Simple Aplication Library';
-   text-align: center;
+  text-align: center;
 }
 #work-4:hover::after {
   content: 'FUNDAMENTAL FRONT-END WEB DEVELOPMENT I';
@@ -181,7 +185,7 @@ nav a:hover{
   content: 'LARAVEL X VUE JS (FULLSTACK)';
   text-align: center;
 }
-#work-6:hover::after{
+#work-6:hover::after {
   content: 'ENGLISH SPEAKING COURSE';
   text-align: center;
 }
@@ -193,14 +197,15 @@ body {
 }
 /* CONTACT */
 #contact {
-  background-color: blue;
+  background-color: rgb(36, 36, 88);
 }
 .title-contact {
   font-family: 'Agbalumo';
 }
 #contact form {
   border: 2px solid black;
-  padding: 40px 30px;
+  border-radius: 20px;
+  padding: 30px 30px;
   background-color: rgb(175, 173, 169);
 }
 #contact a {
@@ -208,6 +213,10 @@ body {
 }
 .img-icon-ig {
   margin-left: 3px;
+}
+.btn-send {
+  background-color: blue;
+  border-radius: 5px;
 }
 .btn-send:hover {
   background-color: green;
