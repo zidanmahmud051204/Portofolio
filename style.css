@@ -189,6 +189,21 @@ nav a:hover {
   content: 'ENGLISH SPEAKING COURSE';
   text-align: center;
 }
+#work-10:hover::after {
+  content: 'WORDPRESS CERTIFICATE';
+}
+#work-img-7:hover::after {
+  content: 'PERAIH MEDALI PERUNGGU NASIONAL PEKAN OLIMPIADE ILMU SOSIAL';
+  text-align: center;
+}
+#work-img-8:hover::after {
+  content: 'PERAIH MEDALI PERUNGGU FUTURE SCIENTIST OLIMPIYAD';
+  text-align: center;
+}
+#work-img-9:hover::after {
+  content: 'LULUSAN TERBAIK MAN 2 SUBANG 2023';
+  text-align: center;
+}
 #project-img {
   margin-top: 400px;
 }
