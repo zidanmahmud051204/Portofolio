@@ -1,22 +1,19 @@
 nav {
-  background-color: rgb(29, 23, 23);
+  background: transparent;
+  background-color: rgb(87, 0, 168);
   box-shadow: 0 0 2px 2px rgb(14, 12, 12);
-}
-nav a {
-  font-family: 'Agbalumo', cursive;
-}
-a {
-  color: black;
 }
 .nav-link:hover {
   color: yellow;
 }
 nav a {
-  color: black;
+  font-family: 'Agbalumo', cursive;
+  color: white;
 }
 nav a:hover {
   color: yellow;
   text-decoration: underline;
+  font-weight: bold;
 }
 /* HOME */
 .home h2 {
@@ -32,15 +29,18 @@ nav a:hover {
   border-radius: 300px;
 }
 .button {
-  border: 3px solid wheat;
-  border-radius: 30px;
-  text-decoration: none;
   color: white;
-  padding: 3px 15px;
+  padding: 7px 8px;
+  border: 5px rgb(87, 0, 168) solid;
+  text-decoration: none;
+  border-radius: 10px;
 }
 .button:hover {
-  background-color: black;
-  color: white;
+  background-color: yellow;
+  color: black;
+  border: 5px yellow solid;
+  border-radius: 10px;
+  transition-duration: 0.5s;
 }
 .img-home {
   border-radius: 200px;
@@ -52,6 +52,7 @@ nav a:hover {
   background-image: url(img/black-abstract-background-web-sites-260nw-1500865019.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 @media only screen and (max-width: 770px) {
   #home img {
@@ -150,6 +151,9 @@ nav a:hover {
 .work-img-item {
   position: relative;
 }
+.transition {
+  transition-delay: 1s;
+}
 .work-img-item:hover::after {
   content: '';
   width: 100%;
@@ -164,6 +168,7 @@ nav a:hover {
   color: white;
   font-size: 20px;
   font-weight: 500px;
+  transition-delay: 1s;
 }
 #work-1:hover::after {
   content: 'Website Company Profile';
@@ -189,9 +194,7 @@ nav a:hover {
   content: 'ENGLISH SPEAKING COURSE';
   text-align: center;
 }
-#work-10:hover::after {
-  content: 'WORDPRESS CERTIFICATE';
-}
+
 #work-img-7:hover::after {
   content: 'PERAIH MEDALI PERUNGGU NASIONAL PEKAN OLIMPIADE ILMU SOSIAL';
   text-align: center;
@@ -204,6 +207,19 @@ nav a:hover {
   content: 'LULUSAN TERBAIK MAN 2 SUBANG 2023';
   text-align: center;
 }
+#work-10:hover::after {
+  content: 'WORDPRESS CERTIFICATE';
+  text-align: center;
+}
+#work-11:hover::after {
+  content: 'MARKETING ONLINE CERTIFICATE';
+  text-align: center;
+}
+#work-12:hover::after {
+  content: 'STAF ADMIN CERTIFICATE';
+  text-align: center;
+}
+
 #project-img {
   margin-top: 400px;
 }
@@ -226,16 +242,20 @@ body {
 #contact a {
   text-decoration: none;
 }
+#contact a:hover {
+  color: yellow;
+}
 .img-icon-ig {
   margin-left: 3px;
 }
 .btn-send {
+  color: white;
   background-color: blue;
   border-radius: 5px;
 }
 .btn-send:hover {
-  background-color: green;
-  color: white;
+  background-color: yellow;
+  color: black;
 }
 @media only screen and (max-width: 400px) {
   #about {
